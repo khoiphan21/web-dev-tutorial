@@ -1,0 +1,116 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin: 0;
+      }
+      .header {
+        display: flex; /* default is left to right */
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 20px; /* top, bottom: 0; left, right: 10% */
+      }
+
+      .title {
+        display: flex;
+        flex-direction: column; /* top to bottom */
+        align-items: center;
+      }
+
+      .heading {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 30px;
+        margin: 10px 0;
+        margin-bottom: 0; /* overrides the above bottom margin specfication */
+      }
+
+      .subtitle {
+        font-style: italic;
+        margin: 5px 0;
+      }
+
+      .logo,
+      .buttons {
+        min-width: 300px;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+      }
+
+      .buttons button {
+        border: none;
+        background: none;
+        text-transform: uppercase;
+      }
+
+      .buttons img {
+        height: 30px;
+      }
+
+      .banner {
+        height: 60vh; /* vh = view height */
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url("https://www2.monash.edu/impact/app/uploads/2019/07/Sugar-cane-field-Biofuels-1400x700-c-center.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .banner-text {
+        color: white;
+        font-family: sans-serif;
+        font-size: 30px;
+        width: 60%;
+        text-align: center;
+      }
+
+      .message {
+        background-color: #006dae;
+        text-align: center;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        padding: 0 20%;
+        color: white;
+        margin: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="logo">
+        <!-- ./ means, in this folder -->
+        <img src="./monash-logo.PNG" alt="Monash Logo" />
+      </div>
+      <div class="title">
+        <p class="heading">impact</p>
+        <p class="subtitle">Shaping the future of business</p>
+      </div>
+      <div class="buttons">
+        <button>Monash business school</button>
+        <img src="./search.PNG" alt="search icon" />
+        <img src="./hamburger.PNG" alt="hamburger icon" />
+        <!-- Duplicate entire line: Shift + Alt + down/up -->
+      </div>
+    </div>
+
+    <div class="banner">
+      <p class="banner-text">RETHINKING BIOFUELS: THE FUTURE OF ENERGY?</p>
+    </div>
+
+    <p class="message">
+      Australia lags the rest of the world when it comes to adopting biofuels –
+      that is, turning plant matter into energy. But we can move beyond the
+      ‘food versus fuel’ argument with expert research and government support.
+    </p>
+  </body>
+
+  <script></script>
+</html>
